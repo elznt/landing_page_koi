@@ -156,3 +156,17 @@ button[type="submit"]:hover {
 .link-button:hover {
     background-color: #0056b3;
 }
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
