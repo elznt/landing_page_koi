@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total KOI Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>  
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/Frame 6.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Frame 6 (1).png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Frame 6 (3).png" style="width:100%">
+        </div>
+    </div>
+    <br>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+  </div>
+    <div class="container">
+        <h1>Selamat Datang di Toko Kami</h1>
+        <img src="img/showa ginrin A.png" alt="Ikan Koi" style="max-width: 100%; height: auto;">
+        <p>Dapatkan produk terbaik dengan harga terjangkau.</p>
+       <a class="link-button" href="https://WA.me/6285893888400">Hubungi Kami</a>>
+    </div>
+    <h1>Produk Kami</h1>
+    <section id="products" class="products">
+        
+        <div class="product">
+            <img src="img/pakan odakan.png" alt="Produk 1">
+            <h3>Odakan Colour</h3>
+            <p>Pakan keeping booster color</p>
+            <a class="link-button" href="https://WA.me/6285893888400">Hubungi Kami</a>>
+        </div>
+        <div class="product">
+            <img src="img/wellgrow.png" alt="Produk 2">
+            <h3>WellGrow</h3>
+            <p>Pakan Grow/pertumbuhan</p>
+            <a class="link-button" href="https://WA.me/6285893888400">Hubungi Kami</a>>
+        </div>
+        <div class="product">
+            <img src="img/Pelet darker.png" alt="Produk 3">
+            <h3>Pakan Darker</h3>
+            <p>Penghitam / Penguat Sumi</p>
+            <a class="link-button" href="https://WA.me/6285893888400">Hubungi Kami</a>>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Kontak Kami</h2>
+        <p>Untuk informasi lebih lanjut, silakan hubungi kami:</p>
+        <ul>
+            <li>Email: info@tokokami.com</li>
+            <li>Telepon: +62 123 4567 890</li>
+            <li>Alamat: Jl. Mawar Indah Jingglong Sutojayan</li>
+        </ul>
+        <div class="map">
+            <!-- Paste your iframe code here -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.953482753109!2d106.827183!3d-6.175392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f150fd88ba57%3A0x401576d14fed770!2sMonas!5e0!3m2!1sen!2sid!4v1600000000000" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <form>
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+    <link rel="Script" href="script.js">
+</body>
+</html>
